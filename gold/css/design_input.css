@@ -1,0 +1,25 @@
+.designInputFrom{width:100%; height:auto; border:1px solid #d0af51; padding:10px;}
+.designInputFrom .titleSer{width:100%; height:auto; display:flex; justify-content: space-between;}
+/* .designInputFrom .titleSer .title_input{display:flex;}
+.designInputFrom .titleSer .serial_input{display:flex;} */
+.designInputFrom .titleSer p{width:33%; _float:left;}
+.designInputFrom .titleSer p.serial_input{_float:right;}
+.designInputFrom .titleSer p label{background:#d0af51; color:#fff; padding:10.5px 0px; display:block; width:25%; text-align:center; float:left;}
+.designInputFrom .titleSer p input{width:75%; border:1px solid #d0af51; padding:10px; float:left;}
+
+.designInputFrom .design_desc textarea{width:100%; height:200px; border:1px solid #d0af51; margin-top:10px; resize:none; padding:10px;}
+
+.designInputFrom .uploadImgs{width:100%; height:auto; display:flex; justify-content:space-between;}
+.designInputFrom .uploadImgs .uploadBox{_float:left; width:33%; height:auto; position:relative;}
+.designInputFrom .uploadBox .inputControll{text-align:center;}
+.designInputFrom .inputControll input[type="file"]{position:absolute; width:1px; height:1px; padding:0; margin:-1; overflow:hidden;}
+.designInputFrom .inputControll label{display:block; width:100%; height:auto; padding:10px 0; text-align:center; border:1px solid #fff; color:#fff; transition:all 0.3s;background: #d0af51;}
+.designInputFrom .inputControll label:hover{background:#fff; color:#d0af51;}
+.designInputFrom .uploadName{display:block; padding:10px; width:100%; border:1px solid #d0af51; color:#d0af51; margin-bottom:10px;}
+.designInputFrom .imgWrap{width:100%; height:auto; padding:5px; border:1px solid #d0af51; overflow:hidden; margin-top:10px;}
+.designInputFrom .imgWrap img{width:100%;}
+
+/* buttons style */
+.btns{display:flex; width:100%; height:auto; margin:0; justify-content: center; transition:all 0.3s;}
+.btns .commonBtn{margin-right:1px; transition:all 0.3s; background:#fff;}
+.btns .commonBtn:hover{background:#d0af51; color:#fff;}
