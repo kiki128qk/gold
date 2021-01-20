@@ -13,7 +13,7 @@
 
 .webDesignInput .uploadImgs{width:100%; height:auto; display:flex; justify-content:space-between;}
 .webDesignInput .uploadImgs .uploadBox{_float:left; width:33%; height:auto; position:relative;}
-.webDesignInput .uploadImgs .uploadBox.appImg{width: 49.5%;}
+.webDesignInput .uploadImgs .uploadBox.appImg{width:49.5%;}
 .webDesignInput .uploadBox .inputControll{text-align:center;}
 .webDesignInput .inputControll input[type="file"]{position:absolute; width:1px; height:1px; padding:0; margin:-1; overflow:hidden;}
 .webDesignInput .inputControll label{display:block; width:100%; height:auto; padding:10px 0; text-align:center; border:1px solid #d0af51; color:#fff; transition:all 0.3s; background:#d0af51;}

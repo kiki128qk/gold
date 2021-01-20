@@ -19,7 +19,7 @@
 
 /* buttons style */
 .btns{display:flex; width:100%; height:auto; margin:0; justify-content: center; transition:all 0.3s;}
-.btns .commonBtn{margin-right:1px; transition:all 0.3s;}
+.btns .commonBtn{margin-right:1px; transition:all 0.3s; background-color:#fff ;}
 .btns .commonBtn:hover{background:#d0af51; color:#fff;}
 
 /**********************************
@@ -107,17 +107,15 @@ Web detail page style
 .webDetail .webBox_m .webMobileFrame .webMainImg_m{width:43%; height:100%; position:relative; overflow:hidden; margin:auto; top:10px;}
 .webDetail .webBox_m .webMobileFrame .webMainImg_m img{top:0; left:0;}
 
-
-
 /**********************************
 app page style
 ***********************************/
 
 .appBoxes .appBox,
 .appBoxes .appBox-sizer{width:25%;}
-.appBoxes .appBox{padding: 5px;}
-.appBoxes .appBox>div{padding: 5px; border: 1px solid #d0af51;
-display: flex; flex-direction: column; justify-content: center;}
-.appBoxes .appBox>div h2{color: #d0af51; font-weight: 600; padding: 5px 0; text-align: center;}
-.appBoxes .appBox>div a{width: 100%; text-align: center; padding: 10px 0; border: 1px solid #d0af51; background: #d0af51; color: #fff;}
-.appBoxes .appBox img{width: 100%;}
+.appBoxes .appBox{padding:5px;}
+.appBoxes .appBox>div{padding:5px; border:1px solid #d0af51; display:flex; flex-direction: column; text-align:center;}
+.appBoxes .appBox>div h2{color:#d0af51; font-weight:600; padding:5px 0;}
+.appBoxes .appBox>div a{width:100%; text-align:center; padding:10px 0; border:1px solid #d0af51; background:#d0af51; color:#fff;}
+.appBoxes .appBox img{width:100%;}
+

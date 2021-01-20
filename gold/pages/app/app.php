@@ -41,20 +41,15 @@
           <!-- end of contact title -->
 
           <div class="appBoxes deWeBoxes">
-
-
             <div class="appBox-sizer"></div>
             
-            
-
           </div>
-          
-
+        
           <div class="btns">
             <?php
               if($userlevel == 1){
             ?>
-              <a href="#" class="commonBtn appLoadMore">Loard More</a>
+              <button class="commonBtn appLoadMore">Loard More</button>
               <a href="#" class="commonBtn toTop">Go To Top</a>
               <a href="/gold/pages/app/app_input_form.php" class="commonBtn">Upload Contents</a>
             <?php

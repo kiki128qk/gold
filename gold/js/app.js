@@ -1,4 +1,8 @@
 $(function () {
+  let count = 4;
+  let addData = 0;
+  let allData = [];
+
   $(".appBoxes").masonry({
     // options
     itemSelector: ".appBox",
@@ -6,17 +10,26 @@ $(function () {
     percentPosition: true,
   });
 
-  // 이미지를 반복문으로 출력
-  $.getJSON("/gold/data/json/app.json", function (data) {
-    // console.log(data[0].appclient);
+  $.getJSON("/gold/data/json/app.json", initAppData);
+
+  function initAppData(data) {
+    allData = data;
+    addAppData();
+    $(".appLoadMore").on("click", addAppData);
+  }
+  // $.getJSON("/gold/data/json/app.json", function (data)
+  //   //console.log(data[0].appclient);
+  //   let items = [];
+  function addAppData() {
     let items = [];
-    $.each(data, function (i, item) {
-      console.log(item);
+    let slicedData = allData.slice(addData, addData + count);
+    $.each(slicedData, function (i, item) {
+      //console.log(item);
       let itemHTML = `<div class="appBox">
                       <div>
-                      <img src="/gold/data/app_page/app_thumb/${item.appthumb}" alt="">
-                      <h2>${item.apptitle}</h2>
-                      <a href="#">View Details</a>
+                        <img src="/gold/data/app_page/app_thumb/${item.appthumb}" alt="">
+                        <h2>${item.apptitle}</h2>
+                        <a href="/gold/pages/app/app_detail.php?num=${item.appnum}">View Details</a>
                       </div>
                     </div>`;
       items.push($(itemHTML).get(0));
@@ -25,8 +38,12 @@ $(function () {
     $(".appBoxes").append(items);
 
     $(".appBoxes").imagesLoaded(function () {
-      // $(items).removeClass("is-loading");
+      //$(items).removeClass("is-loading");
       $(".appBoxes").masonry("appended", items);
     });
-  });
+
+    addData += slicedData.length;
+  }
+
+  // });
 });

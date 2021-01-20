@@ -23,7 +23,9 @@
   <body>
     <div class="wrap">
       
-      <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/header.php" ?>
+      <?php
+        include $_SERVER["DOCUMENT_ROOT"]."/gold/include/header.php";
+      ?>
 
       <section class="contents arrivals">
         <div class="center clear">
@@ -182,36 +184,55 @@
             ?>
             
           </div>
-          <!-- end of men fashion -->
+
+
+          <!-- end of web projects -->
           <div class="fashionBox women">
             <div class="fashionTxt">
-              <h2><em>WOMEN</em> FASHION</h2>
+              <h2><em>APP</em> PROJECTS</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <a href="#">view more</a>
+              <a href="/gold/pages/app/app.php">view more</a>
             </div>
-            <div class="fasionImg">
-              <div>
-                <img src="img/product-type-1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="fasionImg">
-              <div>
-                <img src="img/product-type-2.jpg" alt="" />
-              </div>
-            </div>
-            <div class="fasionImg">
-              <div>
-                <img src="img/product-type-3.jpg" alt="" />
-              </div>
-            </div>
+            
+            
+            <?php
+              // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+              $sql="select * from gold_APP order by GOLD_APP_num desc limit 3";
+
+              $app_result = mysqli_query($dbConn, $sql);
+
+              while($app_row = mysqli_fetch_array($app_result)){
+                $app_num = $app_row['GOLD_APP_num'];
+                $app_thumb = $app_row['GOLD_APP_thumb'];
+                $app_tit = $app_row['GOLD_APP_tit'];
+                $app_des = $app_row['GOLD_APP_des'];
+            ?>
+
+                <!-- app box loop start -->
+                <div class="fasionImg">
+                  <div>
+                    <img src="/gold/data/app_page/app_thumb/<?=$app_thumb?>" alt="" />
+                    <h2><?=$app_tit?></h2>
+                    <em class="cutTxt"><?=$app_des?></em>
+                    <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">View Details</a>
+                  </div>
+                </div>
+                <!-- end of loop  -->
+            
+            <?php
+              }
+            ?>
+
+
           </div>
-          <!-- end of women fashion -->
+           <!-- end of app projects -->
         </div>
+          
       </section>
-      <!-- end of fashion section style -->
+              <!-- end of contents section -->
       
       <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>
 
@@ -295,6 +316,7 @@
           });
           cutTxt()
         }   
+
       });
     </script>
   </body>

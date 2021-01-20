@@ -73,12 +73,10 @@
 
   /* web page style */
   .deWeBoxes .deWeBox.webBox{width:50%;}
-  
+
   /* app page style */
   .appBoxes .appBox,
   .appBoxes .appBox-sizer{width:33.33%;}
-  .appBoxes .appBox>div a{padding: 5px 0; font-size: 12px;}
-
 }
 
 @media screen and (max-width:800px){
@@ -131,12 +129,12 @@
 
   .deWeLeft{width:100%;}
 
- /* app page style */
-  .appBoxes .appBox>div h2{font-size:18px;}
-  .appBoxes .appBox>div a{padding: 5px 0;}
+  a.commonBtn, button.commonBtn{padding:5px 0; font-size:12px;}
 
-
-  a.commonBtn, button.commonBtn{padding: 5px 0; font-size: 12px;}
+  /* app page style */
+  .appBoxes .appBox{padding:3px;}
+  .appBoxes .appBox>div h2{font-size:17px;}
+  .appBoxes .appBox>div a{padding:5px 0; font-size:12px;}
 }
 
 @media screen and (max-width:700px){
@@ -170,6 +168,7 @@
 
   .hasTitle .title .subTit .subLine,
   .hasTitle .title .subTit .subLine{width:60%;}
+  .hasTitle .subTit a.subLink,
   .hasTitle .subTit a.subLink{width:35%;}
 
   .loginBox{width:80%;}
@@ -199,20 +198,19 @@
   .webDesignInput .titleSer p.domain_input{width:100%; _margin-top:10px;}
 
   .webDesignInput .uploadImgs{flex-wrap:wrap;}
-  .webDesignInput .uploadImgs .uploadBox {width:100%;}
-  .webDesignInput .uploadImgs .uploadBox.appImg{width: 100%;}
+  .webDesignInput .uploadImgs .uploadBox{width:100%;}
+  .webDesignInput .uploadImgs .uploadBox.appImg{width:100%;}
   .webDesignInput .uploadImgs .uploadBox.img2{margin:5px 0;}
 
   .designUpload .btns .commonBtn{width:100%;}
 
   .detailCon{width:90%;}
 
-
   /* app page style */
   .appBoxes .appBox,
   .appBoxes .appBox-sizer{width:50%;}
-  .appBoxes .appBox>div{padding: 3px;}
-  .appBoxes .appBox>div h2{font-size: 14px;}
+  .appBoxes .appBox>div{padding:3px;}
+  .appBoxes .appBox>div h2{font-size:14px;}
 }
 
 @media screen and (max-width:480px){
@@ -227,10 +225,10 @@
   .topMain .sns ul i.fa{border-radius:0; background:#aaa;}
 
   .topMain .gnb{height:auto; padding:8px 20px; z-index:999; position:relative;}
-  .topMain .gnb ul{display:none; position:absolute; top:100%; left:0; border-bottom: 1px solid #d0af51;}
-  .topMain .gnb ul li:first-child{border-top: 1px solid #d0af51;}
+  .topMain .gnb ul{display:none; position:absolute; top:100%; left:0;}
 
   .topMain .gnb ul li{float:none; width:100%; background:#000; height:45px; border-bottom:1px solid #d0af51;}
+  .topMain .gnb ul li:first-child{border-top:1px solid #d0af51;}
 
   .mobileMenu{display:flex; z-index:999;}
 
@@ -249,8 +247,7 @@
   .hasTitle .title{margin-bottom:0;}
   .hasTitle .title .subTit .subLine,
   .hasTitle .title .subTit .subLine{width:60%;}
-
-  .hasTitle .subTit a.subLink{width:35%; display: none;}
+  .hasTitle .subTit a.subLink{display:none;}
 
   .about .aboutTxt{padding:30px 0;}
   .about .aboutTxt p:nth-child(1){display:none;}
