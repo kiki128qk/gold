@@ -184,9 +184,7 @@
             ?>
             
           </div>
-
-
-          <!-- end of web projects -->
+          <!-- end of web project -->
           <div class="fashionBox women">
             <div class="fashionTxt">
               <h2><em>APP</em> PROJECTS</h2>
@@ -196,11 +194,10 @@
               </p>
               <a href="/gold/pages/app/app.php">view more</a>
             </div>
-            
-            
+
             <?php
-              // include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-              $sql="select * from gold_APP order by GOLD_APP_num desc limit 3";
+              //include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
+              $sql="select * from gold_app order by GOLD_APP_num desc limit 3";
 
               $app_result = mysqli_query($dbConn, $sql);
 
@@ -211,28 +208,26 @@
                 $app_des = $app_row['GOLD_APP_des'];
             ?>
 
-                <!-- app box loop start -->
-                <div class="fasionImg">
-                  <div>
-                    <img src="/gold/data/app_page/app_thumb/<?=$app_thumb?>" alt="" />
-                    <h2><?=$app_tit?></h2>
-                    <em class="cutTxt"><?=$app_des?></em>
-                    <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">View Details</a>
-                  </div>
-                </div>
-                <!-- end of loop  -->
-            
+            <!-- app box loop start -->
+            <div class="fasionImg">
+              <div>
+                <img src="/gold/data/app_page/app_thumb/<?=$app_thumb?>" alt="" />
+                <h2><?=$app_tit?></h2>
+                <em class="cutTxt"><?=$app_des?></em>
+                <a href="/gold/pages/app/app_detail.php?num=<?=$app_num?>">View Details</a>
+              </div>
+            </div>
+            <!-- loop box -->
+
             <?php
               }
             ?>
 
-
           </div>
-           <!-- end of app projects -->
+          <!-- end of app project -->
         </div>
-          
       </section>
-              <!-- end of contents section -->
+      <!-- end of preview section -->
       
       <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>
 

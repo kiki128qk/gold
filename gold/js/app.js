@@ -1,29 +1,30 @@
-$(function () {
+$(function(){
+
   let count = 4;
   let addData = 0;
-  let allData = [];
+  let allData =  [];
 
-  $(".appBoxes").masonry({
+  $('.appBoxes').masonry({
     // options
-    itemSelector: ".appBox",
-    columnWidth: ".appBox-sizer",
-    percentPosition: true,
+    itemSelector: '.appBox',
+    columnWidth: '.appBox-sizer',
+    percentPosition: true
   });
 
   $.getJSON("/gold/data/json/app.json", initAppData);
 
-  function initAppData(data) {
+  function initAppData(data){
     allData = data;
     addAppData();
+
     $(".appLoadMore").on("click", addAppData);
   }
-  // $.getJSON("/gold/data/json/app.json", function (data)
-  //   //console.log(data[0].appclient);
-  //   let items = [];
-  function addAppData() {
-    let items = [];
+
+  function addAppData(){
+    //console.log(data[0].appclient);
+    let items = [];  
     let slicedData = allData.slice(addData, addData + count);
-    $.each(slicedData, function (i, item) {
+    $.each(slicedData, function(i, item){
       //console.log(item);
       let itemHTML = `<div class="appBox">
                       <div>
@@ -37,13 +38,11 @@ $(function () {
 
     $(".appBoxes").append(items);
 
-    $(".appBoxes").imagesLoaded(function () {
+    $(".appBoxes").imagesLoaded(function(){
       //$(items).removeClass("is-loading");
-      $(".appBoxes").masonry("appended", items);
+      $(".appBoxes").masonry('appended', items);
     });
 
     addData += slicedData.length;
   }
-
-  // });
 });
