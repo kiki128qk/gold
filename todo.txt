@@ -9,6 +9,3 @@
 9. resize 함수 한번만 실행 기능
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
-
-테스트 수정 했습니다. 다른 파일이 많습니다. 중복되지 않습니다.
-테스트 수정 했습니다. 다른 파일이 많습니다. 중복되지 않습니다.
