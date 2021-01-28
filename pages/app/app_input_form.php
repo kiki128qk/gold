@@ -59,11 +59,11 @@
               </div>
               <!-- end of title, serial, client input  -->
               <div class="app_desc uploadDesc">
-                <textarea name="app_desc" placeholder="App Description Here..."></textarea>
+                <textarea name="app_desc" placeholder="Design Description Here..."></textarea>
               </div>
               <!-- end of text description -->
               <div class="uploadImgs clear">
-                <div class="uploadBox  appImg img1">
+                <div class="uploadBox appImg img1">
                   <div class="inputControll">
                     <input class="uploadName" placeholder="Main Image">
                     <label for="mainImage">SELECT IMAGE</label>
@@ -83,7 +83,6 @@
                     <img id="img2">
                   </div>
                 </div>
-               
               </div>
               <!-- end of image upload box -->
             </form>
@@ -144,7 +143,6 @@
           alert('서브 사진을 입력해 주세요!');
           return;
         }
-
 
         document.app_form.submit();
       });
