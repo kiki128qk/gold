@@ -1,0 +1,13 @@
+고유번호
+제목
+시리얼넘버
+설명
+사진
+섬네일
+납품처
+등록일
+도메인
+
+              <!-- <?php 
+                  include $_SERVER['DOCUMENT_ROOT']."/gold/data/ajax/qna_ajax.php";
+                ?> -->
