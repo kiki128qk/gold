@@ -4,7 +4,7 @@
   $login_id=$_POST['loginId'];
   $login_pass=$_POST['loginPass'];
 
-  echo $login_id, $login_pass;
+  // echo $login_id, $login_pass;
 
   //데이터베이스 접속 후 조회 결과 회수
   include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
