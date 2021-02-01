@@ -1,10 +1,10 @@
 <li class="qnaTitle clear">
-     <span class="qnaNum">번호</span>
-      <span class="qnaId">아이디</span>
-      <span class="qnaTit">제목</span>
-      <span class="qnaReg">등록일</span>
-      <span class="qnaHit">조회수</span>
-</li>
+                <span class="qnaNum">번호</span>
+                <span class="qnaId">아이디</span>
+                <span class="qnaTit">제목</span>
+                <span class="qnaReg">등록일</span>
+                <span class="qnaHit">조회수</span>
+              </li>
               <?php
 
                 $page=$_REQUEST["page"];
