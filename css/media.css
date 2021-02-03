@@ -255,6 +255,23 @@
   .memberTab span.memPoint{width:15%;}
   .memberTab span.memUpdate{width:15%;}
   .memberTab span.memDelete{width:15%;}
+
+  /* admin qna tab style */
+  .qnaTab span.qnaNum{display:none;}
+  .qnaTab span.qnaCheck{width:10%;}
+  .qnaTab span.qnaId{width:10%;}
+  .qnaTab span.qnaTit{width:55%}
+  .qnaTab span.qnaReg{width:15%;}
+  .qnaTab span.qnaHit{width:10%;}
+
+  .searchPaging{text-align:center;}
+  .qnaTab .checkDeleteBtn{margin-top:0;}
+
+  .qnaTab .qnaResultBtns{text-align:center;}
+  .qnaTab .qnaResultBtns button{font-size:12px;}
+
+  /* detail page admin button style */
+  .productAdminBtns{text-align:center;}
 }
 
 @media screen and (max-width:600px){
@@ -304,6 +321,13 @@
   /* admin page style */
   .admin .adminTabs{display:flex; justify-content: center;}
   .admin .adminTabs button{display:block; width:33%; margin:0 2px; padding:5px 0;}
+
+  /* admin qna tab style */
+  .qnaTab span.qnaCheck{width:10%;}
+  .qnaTab span.qnaId{width:20%;}
+  .qnaTab span.qnaTit{width:70%}
+  .qnaTab span.qnaReg{display:none;}
+  .qnaTab span.qnaHit{display:none;}
 }
 
 @media screen and (max-width:480px){

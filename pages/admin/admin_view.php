@@ -31,7 +31,7 @@
   </head>
   <body>
     <div class="wrap">
-
+      
       <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/header.php" ?>
 
       <section class="contents qna hasTitle">
@@ -83,14 +83,14 @@
             <div class="adminViewBtns">
               <a href="mailto:<?=$msg_email?>">메일쓰기</a>
               <a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a>
-              <a href="javascript:history.back()">뒤로가기</a>       
+              <a href="/gold/pages/admin/admin.php">뒤로가기</a>       
             </div>
-
+            
           </div> 
 
         </div>
         <!-- end of center -->
-
+  
       </section>
 
       <?php include $_SERVER["DOCUMENT_ROOT"]."/gold/include/about.php" ?>

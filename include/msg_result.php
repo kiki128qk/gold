@@ -1,6 +1,7 @@
 <div class="qnaBoxes admin deWeBoxes">
             <div class="adminTable">
               <ul class="adminList">
+                
                 <li class="adminTitle clear">
                   <span class="msgNum">번호</span>
                   <span class="msgId">아이디</span>
@@ -37,20 +38,15 @@
                     $msg_result_email=$search_result_row['GOLD_MSG_email'];
                 ?>
 
-                <li class="msgContents clear">
+                <li class="adminContents clear">
                   <span class="msgNum"><?=$msg_result_num?></span>
                   <span class="msgId"><?=$msg_result_id?></span>
-                  <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num<?=$msg_result_num?>"><?=$msg_result_tit?></a></span>
+                  <span class="msgTit"><a href="/gold/pages/admin/admin_view.php?num=<?=$msg_result_num?>"><?=$msg_result_tit?></a></span>
                   <span class="msgReg"><?=$msg_result_reg?></span>
                   <span class="msgEmail"><?=$msg_result_email?></span>
                   <span class="msgDelete"><a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_result_num?>">삭제</a></span>
                 </li>
-
-                <div class="adminViewBtns">
-                  <a href="mailto:<?=$msg_email?>">메일쓰기</a>
-                  <a href="/gold/php_process/pages/msg_delete.php?num=<?=$msg_num?>">삭제</a>
-                  <a href="javascript:history.back()">뒤로가기</a>       
-                </div>
+                    
                 <?php
                   }
                 }
@@ -58,4 +54,8 @@
 
               </ul>
             </div>
-            <!-- end of qna table -->      <!-- end of search -->
+            <!-- end of qna table -->
+
+            <div class="adminViewBtns">
+              <a href="/gold/pages/admin/admin.php">뒤로가기</a>       
+            </div>

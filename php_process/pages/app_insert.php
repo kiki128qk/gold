@@ -80,7 +80,7 @@
   )";
 
   mysqli_query($dbConn, $sql);
-
+// ajax로 데이터 변환을 위해 데이터베이스 조회하기
   $sql="select * from gold_app order by GOLD_APP_num desc";
 
   $app_result = mysqli_query($dbConn, $sql);

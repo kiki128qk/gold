@@ -1,10 +1,9 @@
 <?php
-  $mem_num=$_GET['num'];
+  $msg_num=$_GET['num'];
 
   //database connect
   include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
-  $sql="delete from gold_mem where GOLD_mem_num=$mem_num";
-
+  $sql="delete from gold_msg where GOLD_MSG_num=$msg_num";
   mysqli_query($dbConn, $sql);
 
   echo "
@@ -13,4 +12,5 @@
       location.href='/gold/pages/admin/admin.php';
     </script>
   ";
+
 ?>
