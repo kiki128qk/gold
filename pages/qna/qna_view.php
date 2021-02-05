@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" href="/gold/img/favicon.ico" />
+    <link rel="icon" href="/gold/img/favicon.ico" />
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -83,14 +87,14 @@
                 </p>
               </form>
               <?php
-              if($userid==''){
+              if($userlevel != 1){
               ?>
-              <button type="submit" onclick="plzLogin()">등록</button>
+              <a href='/gold/pages/qna/qna.php' class="ansBack">돌아가기</a>
               <?php
               } else {
-              ?>       
+              ?>
               <a href='/gold/pages/qna/qna.php' class="ansBack">돌아가기</a>
-              <button type="submit" class="ansUpdate" onclick="ansUpdate()">수정</button>
+              <button type="submit" class="ansUpdate" onclick="ansUpdate()">수정</button>                     
               <?php
               }
               ?>
@@ -134,7 +138,7 @@
                 <textarea name="ansInputTxt" placeholder="답글을 작성해 주세요."></textarea>
                 <p class="ansBtnBox">
                 <?php
-                if($userid==''){
+                if($userlevel != 1){
                 ?>
                 <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
                 <?php
@@ -167,7 +171,7 @@
       // ansBtn.addEventListener('click', insertAns);
 
       function plzLogin(){
-        alert('글쓰기를 하시려면 로그인이 필요합니다.');
+        alert('관리자로 로그인 해주세요.');
       }
 
       function ansUpdate(){

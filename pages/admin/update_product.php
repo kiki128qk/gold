@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" href="/gold/img/favicon.ico" />
+    <link rel="icon" href="/gold/img/favicon.ico" />
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -40,7 +44,6 @@
           </div>
           <!-- end of contact title -->
 
-          <!-- key 값으로 데이터베이스에 조회됨 -->
           <?php
             $include_path=$_GET['key'];
             include $_SERVER["DOCUMENT_ROOT"]."/gold/include/$include_path.php" 

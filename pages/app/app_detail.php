@@ -26,6 +26,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" href="/gold/img/favicon.ico" />
+    <link rel="icon" href="/gold/img/favicon.ico" />
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -73,10 +77,10 @@
                     <img src="/gold/data/app_page/app_main/<?=$app_detail_img?>" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_005.png" alt="">
+                    <img src="/gold/data/app_page/app_main/app_main_004.png" alt="">
                   </li>
                   <li>
-                    <img src="/gold/data/app_page/app_main/app_main_006.png" alt="">
+                    <img src="/gold/data/app_page/app_main/app_main_005.png" alt="">
                   </li>
                 </ul>
                 <span class="frameTop"></span>
@@ -98,9 +102,8 @@
                 <p><?=$app_detail_des?></p>
                 <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
               </div>
-            </div>
-            <!-- end of web detail contents -->
-            <?php
+
+              <?php
               if($userlevel != 1){
               ?>
               <input type="hidden">
@@ -114,7 +117,7 @@
               <?php
               }
               ?>
-
+            </div>
             <script>
               function confirmDel(){
                 let confirmCheck = confirm('정말로 삭제하시겠습니까?')
@@ -125,6 +128,7 @@
                 }            
               }
             </script>
+            <!-- end of web detail contents -->
           </div>
           <!-- end of left box -->
           <div class="appRight deWeRight">
@@ -134,7 +138,6 @@
             
           </div>
           <!-- end of right box -->
-          
 
         </div>
         <!-- end of center -->

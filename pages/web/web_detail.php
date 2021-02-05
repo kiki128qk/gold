@@ -26,6 +26,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold</title>
 
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" href="/gold/img/favicon.ico" />
+    <link rel="icon" href="/gold/img/favicon.ico" />
+
     <!-- font awesome link -->
     <link
       rel="stylesheet"
@@ -95,7 +99,6 @@
                 <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
               </div>
 
-
               <?php
               if($userlevel != 1){
               ?>
@@ -110,8 +113,8 @@
               <?php
               }
               ?>
-
             </div>
+            <!-- end of web detail contents -->
 
             <script>
               function confirmDel(){
@@ -123,7 +126,6 @@
                 }            
               }
             </script>
-            <!-- end of web detail contents -->
           </div>
           <!-- end of left box -->
           <div class="designRight deWeRight">
